@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "elf"
+version = "0.1.0"
+description = ""
+authors = ["suslik <dunordavind@proton.me>"]
+readme = "README.rst"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+mypy = "^0.950"
+typer = "^0.4.1"
+pydantic = "^1.9.0"
+pytest = "^7.1.2"
+pytest-sugar = "^0.9.4"
+loguru = "^0.6.0"
+mkdocs = "^1.3.0"
+mkdocs-material = "^8.3.1"
+mkdocstrings = {extras = ["python"], version = "^0.19.0"}
+
+[tool.poetry.dev-dependencies]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+log_cli = "true"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
