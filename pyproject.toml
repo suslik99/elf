@@ -3,7 +3,7 @@ name = "elf"
 version = "0.1.0"
 description = ""
 authors = ["suslik <dunordavind@proton.me>"]
-readme = "README.rst"
+readme = "README.org"
 
 [tool.poetry.dependencies]
 python = "^3.9"
@@ -18,6 +18,9 @@ mkdocs-material = "^8.3.1"
 mkdocstrings = {extras = ["python"], version = "^0.19.0"}
 
 [tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+elf = 'elf.console.application:main'
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]
